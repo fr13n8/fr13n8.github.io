@@ -1,0 +1,322 @@
+/* Main */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #474747;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Resume Container */
+
+#resume {
+    display: grid;
+    grid-template-areas: "header  header"
+        "main   info";
+    grid-template-columns: 1fr 270px;
+    width: 60%;
+    margin: 40px auto;
+    background: #eee;
+    border-radius: 5px;
+    box-shadow: 9px 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Info Section (Website, Socials etc.) */
+
+#resume #info {
+    grid-area: info;
+    background: #1F1D1D;
+}
+
+#resume #info a {
+    text-decoration: none;
+    margin-top: 3px;
+    font-size: 16px;
+    font-family: 'Barlow', arial, sans-serif;
+    font-weight: 400;
+    color: #13b4e6;
+}
+
+#resume #info .myemail {
+    color: #13b4e6;
+}
+
+#resume #info p {
+    margin-top: 3px;
+    font-size: 16px;
+    font-family: 'Barlow', arial, sans-serif;
+    font-weight: 400;
+    color: #fcfcfc;
+}
+
+#resume #info .flex-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 10px;
+    margin: 0;
+}
+
+#resume #info .flex-info i {
+    padding-top: 8px;
+    font-size: 17px;
+    color: #fff;
+}
+
+#resume #info .flex-info h2 {
+    font-size: 23px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    color: #f3f3f3;
+}
+
+#resume #info .flex-info .sm {
+    flex-basis: 10%;
+}
+
+#resume #info .flex-info .big {
+    flex-basis: 80%;
+}
+
+#resume #info .flex-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 10px;
+    margin: 0;
+}
+
+#resume #info .flex-socials i {
+    padding-top: 8px;
+    font-size: 17px;
+    color: #fff;
+}
+
+#resume #info p.upwork {
+    font-size: 23px !important;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 700 !important;
+    color: #fff;
+}
+
+#resume #info .flex-socials h2 {
+    font-size: 23px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    color: #f3f3f3;
+}
+
+#resume #info .flex-socials .sm {
+    flex-basis: 10%;
+}
+
+#resume #info .flex-socials .big {
+    flex-basis: 80%;
+}
+
+/* Header Section */
+
+#resume #header {
+    grid-area: header;
+    padding: 35px 0 35px 60px;
+    background: rgb(145, 145, 145);
+}
+
+#resume #header h1 {
+    font-size: 46px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 700;
+}
+
+#resume #header h2 {
+    font-size: 28px;
+    font-family: 'Barlow', arial, sans-serif;
+    font-weight: 400;
+}
+
+/* Main Content Section */
+
+#resume #content {
+    grid-area: main;
+    padding: 25px 0;
+    background: #e6ecf1;
+}
+
+/* General Content Sections Styling */
+#resume #content .intro,
+#resume #content .education,
+#resume #content .skills,
+#resume #content .tools,
+#resume #content .interests,
+#resume #content .lang {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px 10px 20px 20px;
+    background: #fff;
+    box-shadow: 1px 1px 1px 1px rgba(59, 59, 59, 0.6);
+}
+
+/* General Content Sections h1 Styling */
+#resume #content .intro h1,
+#resume #content .education h1,
+#resume #content .skills h1,
+#resume #content .tools h1,
+#resume #content .interests h1,
+#resume #content .lang h1 {
+    font-size: 32px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #3d3d3d;
+}
+
+/* Intro Section */
+
+#resume #content .intro p {
+    font-size: 16px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #252525;
+}
+
+/* Education Section */
+
+#resume #content .education .edu-place {
+    margin: 25px 0;
+}
+
+#resume #content .education h2 {
+    font-size: 24px;
+    font-family: 'Barlow', arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 3px;
+    color: #262626;
+}
+
+#resume #content .education .date {
+    font-size: 15px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 300;
+    margin-bottom: 3px;
+    color: #13b4e6;
+}
+
+#resume #content .education p {
+    font-size: 16px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+    color: #252525;
+}
+
+/* Skills Section */
+
+#resume #content .skills .flex-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#resume #content .skills ul {
+    flex-basis: 45%;
+}
+
+#resume #content .skills ul .fa-circle {
+    margin-right: 4px;
+    font-size: 12px;
+    color: #1F1D1D;
+}
+
+#resume #content .skills ul li {
+    padding: 5px 0;
+    font-size: 15px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+}
+
+#resume #content .skills p {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Tools Section */
+
+#resume #content .tools .flex-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#resume #content .tools ul {
+    flex-basis: 45%;
+}
+
+#resume #content .tools ul .fa-circle {
+    margin-right: 4px;
+    font-size: 12px;
+    color: #1F1D1D;
+}
+
+#resume #content .tools ul li {
+    padding: 5px 0;
+    font-size: 15px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+}
+
+/* Interests Section */
+
+#resume #content .interests .flex-interests {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#resume #content .interests .flex-interests div {
+    flex-basis: 31%;
+    margin: 10px 0;
+}
+
+#resume #content .interests .fa,
+.fab {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #1F1D1D;
+}
+
+#resume #content .interests p {
+    font-size: 17px;
+    font-family: 'Barlow', arial, sans-serif;
+    font-weight: 400;
+}
+
+/* Languages Section */
+
+#resume #content .lang ul li {
+    padding: 3px 0;
+    font-size: 16px;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 400;
+}
