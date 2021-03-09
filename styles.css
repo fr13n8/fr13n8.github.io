@@ -320,3 +320,11 @@ a:hover {
     font-family: 'Roboto', arial, sans-serif;
     font-weight: 400;
 }
+
+/* Image icon */
+
+img {
+    width: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
