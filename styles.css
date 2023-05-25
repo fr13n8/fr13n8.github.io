@@ -95,6 +95,10 @@ a:hover {
     flex-basis: 10%;
 }
 
+#resume #info .flex-info .sm img {
+    margin-top: 8px;
+}
+
 #resume #info .flex-info .big {
     flex-basis: 80%;
 }
